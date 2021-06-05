@@ -94,9 +94,9 @@ function startGame(view: CanvasView) {
 
   // Create paddle
   const paddle = new Paddle(
+    PADDLE_SPEED,
     PADDLE_WIDTH,
     PADDLE_HEIGHT,
-    PADDLE_SPEED,
     {
       x: PADDLE_STARTX,
       y: view.canvas.height - PADDLE_HEIGHT - 5,
