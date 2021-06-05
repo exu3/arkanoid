@@ -17,7 +17,7 @@ import {
   BALL_STARTY,
 } from "./setup";
 // Helpers
-import { createBricks } from "./helper";
+import { createBricks } from "./helpers";
 
 let gameOver = false;
 let score = 0;
