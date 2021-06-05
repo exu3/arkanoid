@@ -63,6 +63,13 @@ function gameLoop(
     view.drawScore(score);
   }
 
+  // Game over when ball goes out of bounds
+  if (ball.pos.y > view.canvas.height) gameOver = true;
+  // checks if the user wins the game
+  if (bricks.length === 0) return setGameWin(view);
+  // checks if gameover and break the loop
+  if (gameOver) return setGameOver(view);
+
   requestAnimationFrame(() => gameLoop(view, bricks, paddle, ball, collision));
 }
 
