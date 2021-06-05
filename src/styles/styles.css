@@ -1,0 +1,51 @@
+:root {
+  --width: 1000px;
+  --height: 680px;
+  background-color: #f2d12e;
+}
+
+#main {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  width: var(--width);
+  height: var(--height);
+  font-size: 24px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.heading-text {
+  padding: 20px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 40px;
+}
+
+#display {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: var(--width);
+  align-items: center;
+}
+
+#score,
+#info {
+  width: 300px;
+  align-items: center;
+}
+
+.block {
+  font-size: 22px;
+}

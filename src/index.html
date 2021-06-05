@@ -2,58 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" />
+
+    <link rel="stylesheet" href="styles/styles.css"/>
     <title>Arkanoid</title>
   </head>
   <body>
     <div id="main" class="main">
-      <canvas id="playField" width="1000" height="600"></canvas>
-      <img id="background" src="./images/background.png"></img>
-      <div id="display">
-        <div id="score"></div>
-        <button id="start">Start</button>
-        <div id="info">Press play!</div>
+     
+      <div class="canvas-wrapper">
+        <canvas id="playField" width="1000" height="600"></canvas>
       </div>
+      <img id="background" src="./images/background.jpg"></img>
+      <div id="display">
+        <div style="display: flex; flex-direction: row;">
+          <div>score: </div>
+          <div id="score"></div>
+        </div>
+        <button id="start" class="block">Start</button>
+        <div id="info">Press start!</div>
+      </div>
+    </div>
+    <div style="text-align: center; padding-top: 50px;">
+      <p>made by <a href="https://github.com/eilla1">@eilla1</a> // <a href="https://github.com/eilla1/arkanoid">source</a></p>
     </div>
     <script src="./index.ts"></script>
   </body>
-  <style>
-    :root {
-      --width: 1000px;
-      --height: 650px;
-    }
-
-    #main {
-      position: relative;
-      width: 1000px;
-      margin: 0 auto;
-      width: var(--width);
-      height: var(--height);
-      font-size: 32px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    canvas {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 10;
-      border-top: 1px solid grey;
-      border-left: 1px solid grey;
-      border-right: 1px solid grey;
-      margin-bottom: 40px;
-    }
-
-    #display {
-      position: absolute;
-      bottom: 0;
-      display: flex;
-      justify-content: space-between;
-      width: var(--width);
-    }
-
-    #score,
-    #info {
-      width: 200px;
-    }
-  </style>
+  
 </html>
