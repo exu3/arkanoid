@@ -21,7 +21,7 @@ The score in the bottom left corner increments by 1 each time the ball strikes a
 
 ```shell
 # clone the repo & go into the folder
-$ git clone https://github.com/eilla1/arkanoid.git && cd arkanoid
+$ git clone https://github.com/exu3/arkanoid.git && cd arkanoid
 
 # install dependencies
 $ npm install
